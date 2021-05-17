@@ -51,8 +51,13 @@ namespace CanBusLogToCsv
         static void WriteCsv(string filePath, List<LogMessage> logMessages, List<Description> descriptions)
         {
             const char separator = ';';
-            var columns = new string[] { "Tick", "Id", "Length", "B0", "B1", "B2", "B3", "B4", "B5", "B6", "B7", "Description", "Calculations" };
             var csv = new StringBuilder();
+            var dataColumns = new string[LogMessage.MaxDataLength];
+            var expressionNames = descriptions.SelectMany(x => x.Expressions).Select(x => x.Name).Distinct();
+
+            var columns = new List<string> { "Tick", "Id", "Description", "Length" };
+            columns.AddRange(dataColumns.Select((_, i) => $"B{i}"));
+            columns.AddRange(expressionNames);
 
             csv.AppendLine(string.Join(separator, columns));
 
@@ -60,36 +65,24 @@ namespace CanBusLogToCsv
             {
                 var description = descriptions.FirstOrDefault(x => x.Id == logMessage.Id);
 
-                var columnValues = new string[] {
-                    logMessage.Tick.ToString(),
-                    "0x" + logMessage.Id.ToString("X3"),
-                    logMessage.Length.ToString(),
-                    "0x" + logMessage.Data[0].ToString("X2"),
-                    "0x" + logMessage.Data[1].ToString("X2"),
-                    "0x" + logMessage.Data[2].ToString("X2"),
-                    "0x" + logMessage.Data[3].ToString("X2"),
-                    "0x" + logMessage.Data[4].ToString("X2"),
-                    "0x" + logMessage.Data[5].ToString("X2"),
-                    "0x" + logMessage.Data[6].ToString("X2"),
-                    "0x" + logMessage.Data[7].ToString("X2"),
-                    description?.Name,
-                    GetCalculations(description?.Expressions, logMessage.Data)
-                };
-
+                var columnValues = new List<string> { logMessage.Tick.ToString(), "0x" + logMessage.Id.ToString("X3"), description?.Name, logMessage.Length.ToString() };
+                columnValues.AddRange(dataColumns.Select((_, i) => i < logMessage.Length ? "0x" + logMessage.Data[i].ToString("X2") : null));
+                columnValues.AddRange(expressionNames.Select(x => GetExpressionValue(x, description?.Expressions, logMessage.Data)));
+                
                 csv.AppendLine(string.Join(separator, columnValues));
             }
 
             File.WriteAllText(filePath, csv.ToString());
         }
 
-        static string GetCalculations(List<DescriptionExpression> descriptionExpressions, byte[] data)
+        static string GetExpressionValue(string expressionName, List<DescriptionExpression> descriptionExpressions, byte[] data)
         {
             if (descriptionExpressions == null || !descriptionExpressions.Any())
             {
                 return null;
             }
 
-            return string.Join("|", descriptionExpressions.Select(x => $"{x.Name}: {Evaluate(x.Expression, data)}"));
+            return Evaluate(descriptionExpressions.FirstOrDefault(x => x.Name == expressionName)?.Expression, data);
         }
 
         static string Evaluate(string expression, byte[] data)
@@ -99,17 +92,24 @@ namespace CanBusLogToCsv
                 return null;
             }
 
-            var newExpression = expression
-                .Replace("{B0}", data[0].ToString())
-                .Replace("{B1}", data[1].ToString())
-                .Replace("{B2}", data[2].ToString())
-                .Replace("{B3}", data[3].ToString())
-                .Replace("{B4}", data[4].ToString())
-                .Replace("{B5}", data[5].ToString())
-                .Replace("{B6}", data[6].ToString())
-                .Replace("{B7}", data[7].ToString());
+            var newExpression = new StringBuilder();
+            int startIndex;
+            while ((startIndex = expression.IndexOf("{B")) >= 0)
+            {
+                newExpression.Append(expression.Substring(0, startIndex));
+                startIndex += 2;
+                var endIndex = expression.IndexOf("}");
+                var bits = expression.Substring(startIndex, endIndex - startIndex).Split(":");
+                var value = bits.Length == 3
+                    ? ((data[int.Parse(bits[0])]) >> (int.Parse(bits[1]))) & ((1 << int.Parse(bits[2])) - 1)
+                    : data[int.Parse(bits[0])];
+                newExpression.Append(value);
+                endIndex += 1;
+                expression = expression.Substring(endIndex);
+            }
+            newExpression.Append(expression);
 
-            return new DataTable().Compute(newExpression, "").ToString();
+            return new DataTable().Compute(newExpression.ToString(), "").ToString();
         }
     }
 }

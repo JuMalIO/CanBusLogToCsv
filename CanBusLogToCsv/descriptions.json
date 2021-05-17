@@ -22,7 +22,7 @@
         "Expressions": [
             {
                 "Name": "Torque",
-                "Expression": "Convert(({B2} * 256 + {B1}) / 16, 'System.Int16') * 0.5"
+                "Expression": "Convert((({B2} * 256 + {B1}) - (({B2} * 256 + {B1}) % 16)) / 16, 'System.Int16') * 0.5"
             }
         ]
     },
@@ -43,6 +43,10 @@
             {
                 "Name": "RPM",
                 "Expression": "({B5} * 256 + {B4})  * 0.25"
+            },
+            {
+                "Name": "Throttle",
+                "Expression": "{B3} * 0.3937007874015748"
             }
         ]
     },
@@ -492,7 +496,13 @@
         "IdHex": "0x1A0",
         "Name": "Speed ​​K-CAN [14] (EHB3)",
         "ModuleId": 41,
-        "ModuleName": "EHB3"
+        "ModuleName": "EHB3",
+        "Expressions": [
+            {
+                "Name": "Speed",
+                "Expression": "(({B1:0:4} * 256) + {B0})* 0.1"
+            }
+        ]
     },
     {
         "Id": 418,
@@ -1455,7 +1465,7 @@
         "Expressions": [
             {
                 "Name": "Date",
-                "Expression": "Convert({B6} * 256 + {B5}, 'System.String') + '.' + Convert(Convert({B4} / 16, 'System.Byte'), 'System.String') + '.' + Convert({B3}, 'System.String') + ' ' + Convert({B0}, 'System.String') + ':' + Convert({B1}, 'System.String') + ':' + Convert({B2}, 'System.String')"
+                "Expression": "Convert({B6} * 256 + {B5}, 'System.String') + '.' + Convert(({B4} - ({B4} % 16)) / 16, 'System.String') + '.' + Convert({B3}, 'System.String') + ' ' + Convert({B0}, 'System.String') + ':' + Convert({B1}, 'System.String') + ':' + Convert({B2}, 'System.String')"
             }
         ]
     },
