@@ -244,7 +244,13 @@
         "IdHex": "0xE2",
         "Name": "Status central locking BFT [11] (JBBF)",
         "ModuleId": 0,
-        "ModuleName": "JBBF"
+        "ModuleName": "JBBF",
+        "Expressions": [
+            {
+                "Name": "FrontPassengerDoorOpen",
+                "Expression": "Convert({B3:0:2}, 'System.Boolean')"
+            }
+        ]
     },
     {
         "Id": 227,
@@ -265,7 +271,13 @@
         "IdHex": "0xEA",
         "Name": "Status central locking FAT [11] (JBBF)",
         "ModuleId": 0,
-        "ModuleName": "JBBF"
+        "ModuleName": "JBBF",
+        "Expressions": [
+            {
+                "Name": "FrontDriverDoorOpen",
+                "Expression": "Convert({B3:0:2}, 'System.Boolean')"
+            }
+        ]
     },
     {
         "Id": 238,
@@ -279,7 +291,13 @@
         "IdHex": "0xF2",
         "Name": "Status central locking HK [13] (JBBF)",
         "ModuleId": 0,
-        "ModuleName": "JBBF"
+        "ModuleName": "JBBF",
+        "Expressions": [
+            {
+                "Name": "BootOpen",
+                "Expression": "Convert({B3:0:2}, 'System.Boolean')"
+            }
+        ]
     },
     {
         "Id": 244,
@@ -607,21 +625,79 @@
         "IdHex": "0x1D0",
         "Name": "Motor data [13] (DME1 / DDE1)",
         "ModuleId": 18,
-        "ModuleName": "DME1 / DDE1"
+        "ModuleName": "DME1 / DDE1",
+        "Expressions": [
+            {
+                "Name": "CoolantTemperature",
+                "Expression": "{B0} - 48"
+            },
+            {
+                "Name": "OilTemperature",
+                "Expression": "{B1} - 48"
+            }
+        ]
     },
     {
         "Id": 466,
         "IdHex": "0x1D2",
         "Name": "Display gear data [22] (EGS_EL)",
         "ModuleId": 24,
-        "ModuleName": "EGS_EL"
+        "ModuleName": "EGS_EL",
+        "Expressions": [
+            {
+                "Name": "GearLeverPosition",
+                "Expression": "IIF({B0:0:4} = 0,'None',IIF({B0:0:4} = 1,'P',IIF({B0:0:4} = 2,'R',IIF({B0:0:4} = 4,'N',IIF({B0:0:4} = 8,'D','-')))))"
+            },
+            {
+                "Name": "Gear",
+                "Expression": "IIF({B1:4:4} = 0,'None',IIF({B1:4:4} = 5,'1',IIF({B1:4:4} = 6,'2',IIF({B1:4:4} = 7,'3',IIF({B1:4:4} = 8,'4',IIF({B1:4:4} = 9,'5',IIF({B1:4:4} = 10,'6','-')))))))"
+            },
+            {
+                "Name": "GearLeverMode",
+                "Expression": "IIF({B4:0:2} = 0,'Normal',IIF({B4:0:2} = 1,'Sport',IIF({B4:0:2} = 2,'Manual','-')))"
+            }
+        ]
     },
     {
         "Id": 470,
         "IdHex": "0x1D6",
         "Name": "Operation pushbutton audio / telephone [12] (SZL_LWS / SZL_LWS)",
         "ModuleId": 2,
-        "ModuleName": "SZL_LWS / SZL_LWS"
+        "ModuleName": "SZL_LWS / SZL_LWS",
+        "Expressions": [
+            {
+                "Name": "ButtonsUp",
+                "Expression": "Convert({B0:5:1}, 'System.Boolean')"
+            },
+            {
+                "Name": "ButtonsDown",
+                "Expression": "Convert({B0:4:1}, 'System.Boolean')"
+            },
+            {
+                "Name": "ButtonsVolumeUp",
+                "Expression": "Convert({B0:3:1}, 'System.Boolean')"
+            },
+            {
+                "Name": "ButtonsVolumeDown",
+                "Expression": "Convert({B0:2:1}, 'System.Boolean')"
+            },
+            {
+                "Name": "ButtonsPhone",
+                "Expression": "Convert({B0:0:1}, 'System.Boolean')"
+            },
+            {
+                "Name": "ButtonsVoice",
+                "Expression": "Convert({B1:0:1}, 'System.Boolean')"
+            },
+            {
+                "Name": "ButtonsDisk",
+                "Expression": "Convert({B1:6:1}, 'System.Boolean')"
+            },
+            {
+                "Name": "ButtonsRotate",
+                "Expression": "Convert({B1:4:1}, 'System.Boolean')"
+            }
+        ]
     },
     {
         "Id": 472,
@@ -664,6 +740,23 @@
         "Name": "Operation air conditioning air distribution BF [7] (CHAMP_M_ASK2 / CCC_GW)",
         "ModuleId": 98,
         "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 481,
+        "IdHex": "0x1E1",
+        "Name": "",
+        "ModuleId": 0,
+        "ModuleName": "",
+        "Expressions": [
+            {
+                "Name": "FrontDriverDoorOpen2",
+                "Expression": "Convert({B1:0:1}, 'System.Boolean')"
+            },
+            {
+                "Name": "FrontPassengerDoorOpen2",
+                "Expression": "Convert({B1:3:1}, 'System.Boolean')"
+            }
+        ]
     },
     {
         "Id": 482,
@@ -1695,6 +1788,10 @@
         "Expressions": [
             {
                 "Name": "Odometer",
+                "Expression": "{B3}"
+            },
+            {
+                "Name": "FuelAverage",
                 "Expression": "({B2} * 256 * 256) + ({B1} * 256) + {B0}"
             }
         ]
@@ -1851,7 +1948,13 @@
         "IdHex": "0x366",
         "Name": "Display combination / external display [3] (Kombi)",
         "ModuleId": 96,
-        "ModuleName": "Kombi"
+        "ModuleName": "Kombi",
+        "Expressions": [
+            {
+                "Name": "ExternalTemperature",
+                "Expression": "({B0} - 80) * 0.5"
+            }
+        ]
     },
     {
         "Id": 871,
@@ -2054,7 +2157,13 @@
         "IdHex": "0x3B4",
         "Name": "Power management battery voltage [11] (DME1 / DDE1)",
         "ModuleId": 18,
-        "ModuleName": "DME1 / DDE1"
+        "ModuleName": "DME1 / DDE1",
+        "Expressions": [
+            {
+                "Name": "Voltage",
+                "Expression": "(({B1:0:4} * 256) + {B0}) * 0.015"
+            }
+        ]
     },
     {
         "Id": 949,
