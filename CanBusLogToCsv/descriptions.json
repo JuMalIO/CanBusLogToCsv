@@ -1,0 +1,3428 @@
+﻿[
+    {
+        "Id": 128,
+        "IdHex": "0x80",
+        "Name": "SYNC [6] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 133,
+        "IdHex": "0x85",
+        "Name": "Synchronization SC VDA (4) (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 168,
+        "IdHex": "0xA8",
+        "Name": "Torque 1 K-CAN (11) (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1",
+        "Expressions": [
+            {
+                "Name": "Torque",
+                "Expression": "Convert(({B2} * 256 + {B1}) / 16, 'System.Int16') * 0.5"
+            }
+        ]
+    },
+    {
+        "Id": 169,
+        "IdHex": "0xA9",
+        "Name": "Torque 2 [10] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 170,
+        "IdHex": "0xAA",
+        "Name": "Torque 3 K-CAN [10] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1",
+        "Expressions": [
+            {
+                "Name": "RPM",
+                "Expression": "({B5} * 256 + {B4})  * 0.25"
+            }
+        ]
+    },
+    {
+        "Id": 172,
+        "IdHex": "0xAC",
+        "Name": "Wheel torque drive train 2 (6) (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 173,
+        "IdHex": "0xAD",
+        "Name": "Delay request ACC [9] (LDM)",
+        "ModuleId": 28,
+        "ModuleName": "LDM"
+    },
+    {
+        "Id": 177,
+        "IdHex": "0xB1",
+        "Name": "Torque request steering [1] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 177,
+        "IdHex": "0xB1",
+        "Name": "Torque request steering [1] (AFS)",
+        "ModuleId": 22,
+        "ModuleName": "AFS"
+    },
+    {
+        "Id": 180,
+        "IdHex": "0xB4",
+        "Name": "Wheel torque drive train 1 (5) (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 181,
+        "IdHex": "0xB5",
+        "Name": "Torque request EGS [9] (EGS_EL)",
+        "ModuleId": 24,
+        "ModuleName": "EGS_EL"
+    },
+    {
+        "Id": 182,
+        "IdHex": "0xB6",
+        "Name": "Torque request DSC [7] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 183,
+        "IdHex": "0xB7",
+        "Name": "Torque request ACC [10] (LDM)",
+        "ModuleId": 28,
+        "ModuleName": "LDM"
+    },
+    {
+        "Id": 184,
+        "IdHex": "0xB8",
+        "Name": "Torque request DKG [4] (LDM)",
+        "ModuleId": 28,
+        "ModuleName": "LDM"
+    },
+    {
+        "Id": 186,
+        "IdHex": "0xBA",
+        "Name": "gearbox data (22) (EGS_EL)",
+        "ModuleId": 24,
+        "ModuleName": "EGS_EL"
+    },
+    {
+        "Id": 187,
+        "IdHex": "0xBB",
+        "Name": "Target torque request [8] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 188,
+        "IdHex": "0xBC",
+        "Name": "Status target torque conversion [7] (VGSG)",
+        "ModuleId": 25,
+        "ModuleName": "VGSG"
+    },
+    {
+        "Id": 190,
+        "IdHex": "0xBE",
+        "Name": "Alive Counter [12] (ARS_Modul)",
+        "ModuleId": 35,
+        "ModuleName": "ARS_Modul"
+    },
+    {
+        "Id": 191,
+        "IdHex": "0xBF",
+        "Name": "Request wheel torque drive train [6] (EHB3 / DXC_RB / DSC_CT)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3 / DXC_RB / DSC_CT"
+    },
+    {
+        "Id": 191,
+        "IdHex": "0xBF",
+        "Name": "Request wheel torque drive train [6] (LDM)",
+        "ModuleId": 28,
+        "ModuleName": "LDM"
+    },
+    {
+        "Id": 192,
+        "IdHex": "0xC0",
+        "Name": "Alive Central Gateway [1] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 193,
+        "IdHex": "0xC1",
+        "Name": "Alive counter telephone [3] (TEL_JAP / TEL_BPI)",
+        "ModuleId": 54,
+        "ModuleName": "TEL_JAP / TEL_BPI"
+    },
+    {
+        "Id": 193,
+        "IdHex": "0xC1",
+        "Name": "Alive counter telephone [3] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 196,
+        "IdHex": "0xC4",
+        "Name": "Steering wheel angle K-CAN [13] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 200,
+        "IdHex": "0xC8",
+        "Name": "Steering wheel angle top F-CAN [10] (SZL_LWS / SZL_LWS)",
+        "ModuleId": 2,
+        "ModuleName": "SZL_LWS / SZL_LWS"
+    },
+    {
+        "Id": 201,
+        "IdHex": "0xC9",
+        "Name": "Steering wheel angle top 2 F-CAN [4] (SZL_LWS)",
+        "ModuleId": 2,
+        "ModuleName": "SZL_LWS"
+    },
+    {
+        "Id": 206,
+        "IdHex": "0xCE",
+        "Name": "Wheel speed F-CAN [6] (EHB3 / EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3 / EHB3"
+    },
+    {
+        "Id": 213,
+        "IdHex": "0xD5",
+        "Name": "Request wheel torque brake (7) (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 213,
+        "IdHex": "0xD5",
+        "Name": "Request wheel torque brake (7) (LDM)",
+        "ModuleId": 28,
+        "ModuleName": "LDM"
+    },
+    {
+        "Id": 215,
+        "IdHex": "0xD7",
+        "Name": "Alive Counter Security [2] (ACSM)",
+        "ModuleId": 1,
+        "ModuleName": "ACSM"
+    },
+    {
+        "Id": 216,
+        "IdHex": "0xD8",
+        "Name": "CLU1 VDA (4) (SC_VDA / RSC_VDA)",
+        "ModuleId": 37,
+        "ModuleName": "SC_VDA / RSC_VDA"
+    },
+    {
+        "Id": 225,
+        "IdHex": "0xE1",
+        "Name": "Wheel torque brake (4) (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 226,
+        "IdHex": "0xE2",
+        "Name": "Status central locking BFT [11] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 227,
+        "IdHex": "0xE3",
+        "Name": "CLU2 VDA (4) (SC_VDA / RSC_VDA)",
+        "ModuleId": 37,
+        "ModuleName": "SC_VDA / RSC_VDA"
+    },
+    {
+        "Id": 230,
+        "IdHex": "0xE6",
+        "Name": "Status central locking BFTH [11] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 234,
+        "IdHex": "0xEA",
+        "Name": "Status central locking FAT [11] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 238,
+        "IdHex": "0xEE",
+        "Name": "Central locking status FATH [11] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 242,
+        "IdHex": "0xF2",
+        "Name": "Status central locking HK [13] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 244,
+        "IdHex": "0xF4",
+        "Name": "CLU3 VDA (3) (RSC_VDA)",
+        "ModuleId": 37,
+        "ModuleName": "RSC_VDA"
+    },
+    {
+        "Id": 247,
+        "IdHex": "0xF7",
+        "Name": "lateral dynamics ARS VDM [3] (ARS_Modul)",
+        "ModuleId": 35,
+        "ModuleName": "ARS_Modul"
+    },
+    {
+        "Id": 249,
+        "IdHex": "0xF9",
+        "Name": "Vertical dynamics VDM ARS [3] (VDM)",
+        "ModuleId": 57,
+        "ModuleName": "VDM"
+    },
+    {
+        "Id": 250,
+        "IdHex": "0xFA",
+        "Name": "Control window lifter FAT [10] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 251,
+        "IdHex": "0xFB",
+        "Name": "Control window lifter BFT [5] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 252,
+        "IdHex": "0xFC",
+        "Name": "Control window lifter FATH [5] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 253,
+        "IdHex": "0xFD",
+        "Name": "Control window lifter BFTH [5] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 254,
+        "IdHex": "0xFE",
+        "Name": "Voltage level sensors [3] (VDM)",
+        "ModuleId": 57,
+        "ModuleName": "VDM"
+    },
+    {
+        "Id": 280,
+        "IdHex": "0x118",
+        "Name": "Exchange AFS DSC [10] (AFS)",
+        "ModuleId": 22,
+        "ModuleName": "AFS"
+    },
+    {
+        "Id": 286,
+        "IdHex": "0x11E",
+        "Name": "Control interventions DSC_AFS [6] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 288,
+        "IdHex": "0x120",
+        "Name": "Status partial setpoints AFS DSC 2 [2] (AFS)",
+        "ModuleId": 22,
+        "ModuleName": "AFS"
+    },
+    {
+        "Id": 298,
+        "IdHex": "0x12A",
+        "Name": "Sensor data ROSE [2] (ACSM_ROSE)",
+        "ModuleId": 1,
+        "ModuleName": "ACSM_ROSE"
+    },
+    {
+        "Id": 300,
+        "IdHex": "0x12C",
+        "Name": "input data ROSE [4] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 304,
+        "IdHex": "0x130",
+        "Name": "Terminal status [19] (CAS / CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS / CAS"
+    },
+    {
+        "Id": 309,
+        "IdHex": "0x135",
+        "Name": "Control crash shutdown EKP [1] (ACSM)",
+        "ModuleId": 1,
+        "ModuleName": "ACSM"
+    },
+    {
+        "Id": 336,
+        "IdHex": "0x150",
+        "Name": "Request 1 ACC [5] (LDM)",
+        "ModuleId": 28,
+        "ModuleName": "LDM"
+    },
+    {
+        "Id": 339,
+        "IdHex": "0x153",
+        "Name": "Request 2 ACC [5] (LDM)",
+        "ModuleId": 28,
+        "ModuleName": "LDM"
+    },
+    {
+        "Id": 345,
+        "IdHex": "0x159",
+        "Name": "Object data ACC [3] (ACC_Sensor)",
+        "ModuleId": 33,
+        "ModuleName": "ACC_Sensor"
+    },
+    {
+        "Id": 348,
+        "IdHex": "0x15C",
+        "Name": "Status ACC [5] (ACC_Sensor)",
+        "ModuleId": 33,
+        "ModuleName": "ACC_Sensor"
+    },
+    {
+        "Id": 351,
+        "IdHex": "0x15F",
+        "Name": "Requirement angle FFP [6] (LDM)",
+        "ModuleId": 28,
+        "ModuleName": "LDM"
+    },
+    {
+        "Id": 357,
+        "IdHex": "0x165",
+        "Name": "CLU Status VDA (4) (SC_VDA / RSC_VDA)",
+        "ModuleId": 37,
+        "ModuleName": "SC_VDA / RSC_VDA"
+    },
+    {
+        "Id": 370,
+        "IdHex": "0x172",
+        "Name": "Acknowledgment request combination [1] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 373,
+        "IdHex": "0x175",
+        "Name": "Display motor data [1] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 400,
+        "IdHex": "0x190",
+        "Name": "display ACC [13] (LDM)",
+        "ModuleId": 28,
+        "ModuleName": "LDM"
+    },
+    {
+        "Id": 403,
+        "IdHex": "0x193",
+        "Name": "display ACC DCC (5) (EHB3 / DXC_RB / DSC_CT)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3 / DXC_RB / DSC_CT"
+    },
+    {
+        "Id": 403,
+        "IdHex": "0x193",
+        "Name": "display ACC DCC (5) (LDM)",
+        "ModuleId": 28,
+        "ModuleName": "LDM"
+    },
+    {
+        "Id": 404,
+        "IdHex": "0x194",
+        "Name": "Operation cruise control / ACC [13] (SZL_LWS)",
+        "ModuleId": 2,
+        "ModuleName": "SZL_LWS"
+    },
+    {
+        "Id": 405,
+        "IdHex": "0x195",
+        "Name": "Operation push button MSA [2] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 408,
+        "IdHex": "0x198",
+        "Name": "Operation gear selector switch 2 [3] (GWS)",
+        "ModuleId": 94,
+        "ModuleName": "GWS"
+    },
+    {
+        "Id": 414,
+        "IdHex": "0x19E",
+        "Name": "Status DSC K-CAN [19] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 416,
+        "IdHex": "0x1A0",
+        "Name": "Speed ​​K-CAN [14] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 418,
+        "IdHex": "0x1A2",
+        "Name": "Gear data 2 [6] (EGS_EL)",
+        "ModuleId": 24,
+        "ModuleName": "EGS_EL"
+    },
+    {
+        "Id": 419,
+        "IdHex": "0x1A3",
+        "Name": "Raw data longitudinal acceleration [6] (DSC_CT)",
+        "ModuleId": 41,
+        "ModuleName": "DSC_CT"
+    },
+    {
+        "Id": 419,
+        "IdHex": "0x1A3",
+        "Name": "Raw data longitudinal acceleration [6] (DME1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1"
+    },
+    {
+        "Id": 422,
+        "IdHex": "0x1A6",
+        "Name": "Route [6] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 423,
+        "IdHex": "0x1A7",
+        "Name": "actuation request EMF [4] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 426,
+        "IdHex": "0x1AA",
+        "Name": "Effect ErgoCommander [10] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 428,
+        "IdHex": "0x1AC",
+        "Name": "Status ARS module [13] (ARS_Modul)",
+        "ModuleId": 35,
+        "ModuleName": "ARS_Modul"
+    },
+    {
+        "Id": 436,
+        "IdHex": "0x1B4",
+        "Name": "Status Kombi (15) (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 437,
+        "IdHex": "0x1B5",
+        "Name": "Heat flow / load torque air conditioning [14] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 438,
+        "IdHex": "0x1B6",
+        "Name": "Heat flow motor [11] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 440,
+        "IdHex": "0x1B8",
+        "Name": "Operation ErgoCommander [6] (ZBE)",
+        "ModuleId": 103,
+        "ModuleName": "ZBE"
+    },
+    {
+        "Id": 450,
+        "IdHex": "0x1C2",
+        "Name": "Distance message PDC [5] (PDC)",
+        "ModuleId": 100,
+        "ModuleName": "PDC"
+    },
+    {
+        "Id": 451,
+        "IdHex": "0x1C3",
+        "Name": "Distance message 2 PDC [3] (PDC)",
+        "ModuleId": 100,
+        "ModuleName": "PDC"
+    },
+    {
+        "Id": 454,
+        "IdHex": "0x1C6",
+        "Name": "Acoustic message PDC [5] (PDC)",
+        "ModuleId": 100,
+        "ModuleName": "PDC"
+    },
+    {
+        "Id": 464,
+        "IdHex": "0x1D0",
+        "Name": "Motor data [13] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 466,
+        "IdHex": "0x1D2",
+        "Name": "Display gear data [22] (EGS_EL)",
+        "ModuleId": 24,
+        "ModuleName": "EGS_EL"
+    },
+    {
+        "Id": 470,
+        "IdHex": "0x1D6",
+        "Name": "Operation pushbutton audio / telephone [12] (SZL_LWS / SZL_LWS)",
+        "ModuleId": 2,
+        "ModuleName": "SZL_LWS / SZL_LWS"
+    },
+    {
+        "Id": 472,
+        "IdHex": "0x1D8",
+        "Name": "Operation air conditioning air distribution FA [13] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 473,
+        "IdHex": "0x1D9",
+        "Name": "Operation pushbutton M-Drive [2] (SZL_LWS / SZL_LWS)",
+        "ModuleId": 2,
+        "ModuleName": "SZL_LWS / SZL_LWS"
+    },
+    {
+        "Id": 474,
+        "IdHex": "0x1DA",
+        "Name": "Climate control remote control [5] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 476,
+        "IdHex": "0x1DC",
+        "Name": "Operation stratification seat heating [1] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 478,
+        "IdHex": "0x1DE",
+        "Name": "Air conditioning controls rear [8] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 480,
+        "IdHex": "0x1E0",
+        "Name": "Operation air conditioning air distribution BF [7] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 482,
+        "IdHex": "0x1E2",
+        "Name": "Operation air conditioning front [11] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 483,
+        "IdHex": "0x1E3",
+        "Name": "Operation pushbutton interior lighting [2] (FZD)",
+        "ModuleId": 86,
+        "ModuleName": "FZD"
+    },
+    {
+        "Id": 487,
+        "IdHex": "0x1E7",
+        "Name": "Operation seat heating / seat climate FA [7] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 488,
+        "IdHex": "0x1E8",
+        "Name": "Operation seat heating / seat climate BF [7] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 490,
+        "IdHex": "0x1EA",
+        "Name": "Steering column adjustment control [5] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 491,
+        "IdHex": "0x1EB",
+        "Name": "Operation active seat FA [4] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 492,
+        "IdHex": "0x1EC",
+        "Name": "Operation active seat BF [4] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 494,
+        "IdHex": "0x1EE",
+        "Name": "Steering column switch operation [6] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 499,
+        "IdHex": "0x1F3",
+        "Name": "Operation seat memory FA [4] (Sender unknown)",
+        "ModuleId": 255,
+        "ModuleName": "Sender unknown"
+    },
+    {
+        "Id": 502,
+        "IdHex": "0x1F6",
+        "Name": "Blinken [6] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 504,
+        "IdHex": "0x1F8",
+        "Name": "Operation SHD / MDS [1] (FZD)",
+        "ModuleId": 86,
+        "ModuleName": "FZD"
+    },
+    {
+        "Id": 507,
+        "IdHex": "0x1FB",
+        "Name": "Status EPS [2] (EPS)",
+        "ModuleId": 48,
+        "ModuleName": "EPS"
+    },
+    {
+        "Id": 508,
+        "IdHex": "0x1FC",
+        "Name": "Status AFS [4] (AFS)",
+        "ModuleId": 22,
+        "ModuleName": "AFS"
+    },
+    {
+        "Id": 509,
+        "IdHex": "0x1FD",
+        "Name": "Status request EMF K-CAN [1] (EMF)",
+        "ModuleId": 42,
+        "ModuleName": "EMF"
+    },
+    {
+        "Id": 510,
+        "IdHex": "0x1FE",
+        "Name": "Crash [12] (ACSM)",
+        "ModuleId": 1,
+        "ModuleName": "ACSM"
+    },
+    {
+        "Id": 512,
+        "IdHex": "0x200",
+        "Name": "Control speed stage cruise control (8) (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 513,
+        "IdHex": "0x201",
+        "Name": "Status EMF K-CAN [2] (EMF)",
+        "ModuleId": 42,
+        "ModuleName": "EMF"
+    },
+    {
+        "Id": 514,
+        "IdHex": "0x202",
+        "Name": "Dimming [10] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 514,
+        "IdHex": "0x202",
+        "Name": "Dimming [10] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 517,
+        "IdHex": "0x205",
+        "Name": "Acoustic request combi [3] (combi)",
+        "ModuleId": 96,
+        "ModuleName": "combi"
+    },
+    {
+        "Id": 518,
+        "IdHex": "0x206",
+        "Name": "Control Display Shiftlights [1] (DME1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1"
+    },
+    {
+        "Id": 523,
+        "IdHex": "0x20B",
+        "Name": "Memory adjustment [6] (SM_FA)",
+        "ModuleId": 109,
+        "ModuleName": "SM_FA"
+    },
+    {
+        "Id": 524,
+        "IdHex": "0x20C",
+        "Name": "Steering column control [4] (SM_FA)",
+        "ModuleId": 109,
+        "ModuleName": "SM_FA"
+    },
+    {
+        "Id": 525,
+        "IdHex": "0x20D",
+        "Name": "Position steering column [5] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 528,
+        "IdHex": "0x210",
+        "Name": "Operation HUD [7] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 529,
+        "IdHex": "0x211",
+        "Name": "Status HUD [7] (HUD)",
+        "ModuleId": 61,
+        "ModuleName": "HUD"
+    },
+    {
+        "Id": 530,
+        "IdHex": "0x212",
+        "Name": "Height levels air spring [8] (EHC)",
+        "ModuleId": 56,
+        "ModuleName": "EHC"
+    },
+    {
+        "Id": 538,
+        "IdHex": "0x21A",
+        "Name": "Lamp status [13] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 540,
+        "IdHex": "0x21C",
+        "Name": "Operation Night-Vision [2] (CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CCC_GW"
+    },
+    {
+        "Id": 542,
+        "IdHex": "0x21E",
+        "Name": "Status Night-Vision [2] (NVC)",
+        "ModuleId": 87,
+        "ModuleName": "NVC"
+    },
+    {
+        "Id": 548,
+        "IdHex": "0x224",
+        "Name": "Operation push button NSW [2] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 550,
+        "IdHex": "0x226",
+        "Name": "Rain sensor wiper speed [8] (FZD)",
+        "ModuleId": 86,
+        "ModuleName": "FZD"
+    },
+    {
+        "Id": 552,
+        "IdHex": "0x228",
+        "Name": "Operation special function [8] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 552,
+        "IdHex": "0x228",
+        "Name": "Operation special function [8] (RAD1)",
+        "ModuleId": 99,
+        "ModuleName": "RAD1"
+    },
+    {
+        "Id": 554,
+        "IdHex": "0x22A",
+        "Name": "Status BFS [10] (SM_BF)",
+        "ModuleId": 110,
+        "ModuleName": "SM_BF"
+    },
+    {
+        "Id": 554,
+        "IdHex": "0x22A",
+        "Name": "Status BFS [10] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 556,
+        "IdHex": "0x22C",
+        "Name": "Operation push button NSL [2] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 558,
+        "IdHex": "0x22E",
+        "Name": "Status BFSH [7] (Sender unknown)",
+        "ModuleId": 255,
+        "ModuleName": "Sender unknown"
+    },
+    {
+        "Id": 562,
+        "IdHex": "0x232",
+        "Name": "Status FAS [10] (SM_FA)",
+        "ModuleId": 109,
+        "ModuleName": "SM_FA"
+    },
+    {
+        "Id": 562,
+        "IdHex": "0x232",
+        "Name": "Status FAS [10] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 566,
+        "IdHex": "0x236",
+        "Name": "Status FASH [7] (Sender unknown)",
+        "ModuleId": 255,
+        "ModuleName": "Sender unknown"
+    },
+    {
+        "Id": 570,
+        "IdHex": "0x23A",
+        "Name": "Status radio key [13] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 571,
+        "IdHex": "0x23B",
+        "Name": "Status climate front extended [1] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 573,
+        "IdHex": "0x23D",
+        "Name": "Request display climate [2] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 574,
+        "IdHex": "0x23E",
+        "Name": "Status Klima Fond [11] (FKA)",
+        "ModuleId": 121,
+        "ModuleName": "FKA"
+    },
+    {
+        "Id": 578,
+        "IdHex": "0x242",
+        "Name": "Status air conditioning front [11] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 582,
+        "IdHex": "0x246",
+        "Name": "Status air conditioning front control unit [11] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 584,
+        "IdHex": "0x248",
+        "Name": "Status rear view camera [2] (RFK)",
+        "ModuleId": 119,
+        "ModuleName": "RFK"
+    },
+    {
+        "Id": 585,
+        "IdHex": "0x249",
+        "Name": "Control rear view camera [1] (CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CCC_GW"
+    },
+    {
+        "Id": 586,
+        "IdHex": "0x24A",
+        "Name": "Status PDC [6] (PDC)",
+        "ModuleId": 100,
+        "ModuleName": "PDC"
+    },
+    {
+        "Id": 587,
+        "IdHex": "0x24B",
+        "Name": "Status door sensors [5] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 594,
+        "IdHex": "0x252",
+        "Name": "Wiper status [8] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 598,
+        "IdHex": "0x256",
+        "Name": "Challenge Passive Access [10] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 600,
+        "IdHex": "0x258",
+        "Name": "Status Transmission Passive Access [4] (PGS)",
+        "ModuleId": 39,
+        "ModuleName": "PGS"
+    },
+    {
+        "Id": 604,
+        "IdHex": "0x25C",
+        "Name": "Operation of climate additional programs [2] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 621,
+        "IdHex": "0x26D",
+        "Name": "Operation blinds MK [1] (IHR / IHKR / IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHR / IHKR / IHKA"
+    },
+    {
+        "Id": 622,
+        "IdHex": "0x26E",
+        "Name": "Control FH / SHD central (comfort) [10] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 635,
+        "IdHex": "0x27B",
+        "Name": "Status Shiftlights [1] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 637,
+        "IdHex": "0x27D",
+        "Name": "Status convertible top manual convertible [1] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 638,
+        "IdHex": "0x27E",
+        "Name": "Status convertible top convertible [7] (CVM_V / CTM)",
+        "ModuleId": 36,
+        "ModuleName": "CVM_V / CTM"
+    },
+    {
+        "Id": 639,
+        "IdHex": "0x27F",
+        "Name": "Status central locking convertible top [1] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 642,
+        "IdHex": "0x282",
+        "Name": "Control security vehicle 2 [6] (Sender unknown)",
+        "ModuleId": 255,
+        "ModuleName": "Sender unknown"
+    },
+    {
+        "Id": 644,
+        "IdHex": "0x284",
+        "Name": "Control remote start safety vehicle [8] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 646,
+        "IdHex": "0x286",
+        "Name": "Electrochromic control [1] (FZD)",
+        "ModuleId": 86,
+        "ModuleName": "FZD"
+    },
+    {
+        "Id": 652,
+        "IdHex": "0x28C",
+        "Name": "Pushbutton vertical dynamics [2] (GWS)",
+        "ModuleId": 94,
+        "ModuleName": "GWS"
+    },
+    {
+        "Id": 653,
+        "IdHex": "0x28D",
+        "Name": "Operation pushbutton sport [1] (GWS)",
+        "ModuleId": 94,
+        "ModuleName": "GWS"
+    },
+    {
+        "Id": 656,
+        "IdHex": "0x290",
+        "Name": "Control response hydrogen vehicle [1] (Sender unknown)",
+        "ModuleId": 255,
+        "ModuleName": "Sender unknown"
+    },
+    {
+        "Id": 658,
+        "IdHex": "0x292",
+        "Name": "Control high beam assistant (3) (FLA)",
+        "ModuleId": 95,
+        "ModuleName": "FLA"
+    },
+    {
+        "Id": 670,
+        "IdHex": "0x29E",
+        "Name": "Central locking control for security vehicle [4] (Sender unknown)",
+        "ModuleId": 255,
+        "ModuleName": "Sender unknown"
+    },
+    {
+        "Id": 671,
+        "IdHex": "0x29F",
+        "Name": "Remote control FondCommander [5] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 672,
+        "IdHex": "0x2A0",
+        "Name": "Central locking control [10] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 674,
+        "IdHex": "0x2A2",
+        "Name": "Operation of climate stand functions [5] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 676,
+        "IdHex": "0x2A4",
+        "Name": "Operation personalization [8] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 678,
+        "IdHex": "0x2A6",
+        "Name": "Operation of wiper button [12] (SZL_LWS / SZL_LWS)",
+        "ModuleId": 2,
+        "ModuleName": "SZL_LWS / SZL_LWS"
+    },
+    {
+        "Id": 690,
+        "IdHex": "0x2B2",
+        "Name": "Wheel pressures K-CAN [1] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 691,
+        "IdHex": "0x2B3",
+        "Name": "Acceleration data [3] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 692,
+        "IdHex": "0x2B4",
+        "Name": "DWA-Alarm [4] (FZD)",
+        "ModuleId": 86,
+        "ModuleName": "FZD"
+    },
+    {
+        "Id": 692,
+        "IdHex": "0x2B4",
+        "Name": "DWA-Alarm [4] (DWA)",
+        "ModuleId": 65,
+        "ModuleName": "DWA"
+    },
+    {
+        "Id": 694,
+        "IdHex": "0x2B6",
+        "Name": "Control horn DWA [3] (FZD)",
+        "ModuleId": 86,
+        "ModuleName": "FZD"
+    },
+    {
+        "Id": 694,
+        "IdHex": "0x2B6",
+        "Name": "Control horn DWA [3] (DWA)",
+        "ModuleId": 65,
+        "ModuleName": "DWA"
+    },
+    {
+        "Id": 696,
+        "IdHex": "0x2B8",
+        "Name": "Operation on-board computer [3] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 697,
+        "IdHex": "0x2B9",
+        "Name": "Operation RSE [1] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 698,
+        "IdHex": "0x2BA",
+        "Name": "Stopwatch [3] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 701,
+        "IdHex": "0x2BD",
+        "Name": "Request switching display [2] (CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CCC_GW"
+    },
+    {
+        "Id": 702,
+        "IdHex": "0x2BE",
+        "Name": "Switch status display [2] (VSW)",
+        "ModuleId": 72,
+        "ModuleName": "VSW"
+    },
+    {
+        "Id": 703,
+        "IdHex": "0x2BF",
+        "Name": "Water valve control [2] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 704,
+        "IdHex": "0x2C0",
+        "Name": "LCD luminance [7] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 706,
+        "IdHex": "0x2C2",
+        "Name": "Temperatur Ist Fond [2] (FKA)",
+        "ModuleId": 121,
+        "ModuleName": "FKA"
+    },
+    {
+        "Id": 711,
+        "IdHex": "0x2C7",
+        "Name": "Display combination extended [1] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 714,
+        "IdHex": "0x2CA",
+        "Name": "Outside temperature [9] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 716,
+        "IdHex": "0x2CC",
+        "Name": "Control monitor rear [2] (RSE)",
+        "ModuleId": 38,
+        "ModuleName": "RSE"
+    },
+    {
+        "Id": 718,
+        "IdHex": "0x2CE",
+        "Name": "Control monitor [4] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 719,
+        "IdHex": "0x2CF",
+        "Name": "Status of auxiliary water pump [4] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 720,
+        "IdHex": "0x2D0",
+        "Name": "Status Sensor AUC [4] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 721,
+        "IdHex": "0x2D1",
+        "Name": "Status fitting window V [5] (FZD)",
+        "ModuleId": 86,
+        "ModuleName": "FZD"
+    },
+    {
+        "Id": 722,
+        "IdHex": "0x2D2",
+        "Name": "Status pressure refrigeration circuit [5] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 723,
+        "IdHex": "0x2D3",
+        "Name": "Status stratification rear [6] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 725,
+        "IdHex": "0x2D5",
+        "Name": "Status heating rear window [1] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 726,
+        "IdHex": "0x2D6",
+        "Name": "Status valve air conditioning compressor [3] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 730,
+        "IdHex": "0x2DA",
+        "Name": "Status tailgate lift [2] (HKL)",
+        "ModuleId": 107,
+        "ModuleName": "HKL"
+    },
+    {
+        "Id": 734,
+        "IdHex": "0x2DE",
+        "Name": "Switch control display [1] (VSW)",
+        "ModuleId": 72,
+        "ModuleName": "VSW"
+    },
+    {
+        "Id": 738,
+        "IdHex": "0x2E2",
+        "Name": "Status setting video night vision [1] (NVC)",
+        "ModuleId": 87,
+        "ModuleName": "NVC"
+    },
+    {
+        "Id": 739,
+        "IdHex": "0x2E3",
+        "Name": "Status setting video rear view camera [1] (RFK)",
+        "ModuleId": 119,
+        "ModuleName": "RFK"
+    },
+    {
+        "Id": 740,
+        "IdHex": "0x2E4",
+        "Name": "Status trailer [8] (AHM)",
+        "ModuleId": 113,
+        "ModuleName": "AHM"
+    },
+    {
+        "Id": 742,
+        "IdHex": "0x2E6",
+        "Name": "Status of air distribution FA [13] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 746,
+        "IdHex": "0x2EA",
+        "Name": "Status air distribution BF [9] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 750,
+        "IdHex": "0x2EE",
+        "Name": "Status climate additional programs [2] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 752,
+        "IdHex": "0x2F0",
+        "Name": "Status air condition functions [12] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 753,
+        "IdHex": "0x2F1",
+        "Name": "Status driver detection [2] (MRSZ / ACSM)",
+        "ModuleId": 1,
+        "ModuleName": "MRSZ / ACSM"
+    },
+    {
+        "Id": 755,
+        "IdHex": "0x2F3",
+        "Name": "Display switching instruction [4] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 756,
+        "IdHex": "0x2F4",
+        "Name": "Air conditioning control SH / ZH auxiliary water pump [13] (IHR / IHKR / IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHR / IHKR / IHKA"
+    },
+    {
+        "Id": 758,
+        "IdHex": "0x2F6",
+        "Name": "Control light [7] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 759,
+        "IdHex": "0x2F7",
+        "Name": "Units [10] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 760,
+        "IdHex": "0x2F8",
+        "Name": "Time / Date [12] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi",
+        "Expressions": [
+            {
+                "Name": "Date",
+                "Expression": "Convert({B6} * 256 + {B5}, 'System.String') + '.' + Convert(Convert({B4} / 16, 'System.Byte'), 'System.String') + '.' + Convert({B3}, 'System.String') + ' ' + Convert({B0}, 'System.String') + ':' + Convert({B1}, 'System.String') + ':' + Convert({B2}, 'System.String')"
+            }
+        ]
+    },
+    {
+        "Id": 762,
+        "IdHex": "0x2FA",
+        "Name": "Seat occupancy belt contacts (15) (ACSM)",
+        "ModuleId": 1,
+        "ModuleName": "ACSM"
+    },
+    {
+        "Id": 764,
+        "IdHex": "0x2FC",
+        "Name": "ZV and damper status [11] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 768,
+        "IdHex": "0x300",
+        "Name": "Status RSE [1] (RSE)",
+        "ModuleId": 38,
+        "ModuleName": "RSE"
+    },
+    {
+        "Id": 772,
+        "IdHex": "0x304",
+        "Name": "Status Gang [13] (EGS_EL)",
+        "ModuleId": 24,
+        "ModuleName": "EGS_EL"
+    },
+    {
+        "Id": 773,
+        "IdHex": "0x305",
+        "Name": "Operation button convertible top [2] (IHR / IHKR / IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHR / IHKR / IHKA"
+    },
+    {
+        "Id": 774,
+        "IdHex": "0x306",
+        "Name": "Vehicle tilt [2] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 775,
+        "IdHex": "0x307",
+        "Name": "Operation button flap convertible top [2] (IHR / IHKR / IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHR / IHKR / IHKA"
+    },
+    {
+        "Id": 776,
+        "IdHex": "0x308",
+        "Name": "Status MSA [2] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 784,
+        "IdHex": "0x310",
+        "Name": "Outside temperature / relative time [10] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 785,
+        "IdHex": "0x311",
+        "Name": "Refill quantity [3] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 786,
+        "IdHex": "0x312",
+        "Name": "Service Call Teleservice [2] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 787,
+        "IdHex": "0x313",
+        "Name": "Status Service Call Teleservice [3] (TEL_BPI)",
+        "ModuleId": 54,
+        "ModuleName": "TEL_BPI"
+    },
+    {
+        "Id": 787,
+        "IdHex": "0x313",
+        "Name": "Status Service Call Teleservice [3] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 788,
+        "IdHex": "0x314",
+        "Name": "Status driving light [9] (FZD)",
+        "ModuleId": 86,
+        "ModuleName": "FZD"
+    },
+    {
+        "Id": 789,
+        "IdHex": "0x315",
+        "Name": "Vehicle mode [8] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 790,
+        "IdHex": "0x316",
+        "Name": "Operation push button DSC [4] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 790,
+        "IdHex": "0x316",
+        "Name": "Operation push button DSC [4] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 791,
+        "IdHex": "0x317",
+        "Name": "Operation button parking aids [2] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 792,
+        "IdHex": "0x318",
+        "Name": "Status antennas Passive Access [7] (PGS)",
+        "ModuleId": 39,
+        "ModuleName": "PGS"
+    },
+    {
+        "Id": 793,
+        "IdHex": "0x319",
+        "Name": "Operation push button RDC (5) (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 793,
+        "IdHex": "0x319",
+        "Name": "Operation push button RDC (5) (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 794,
+        "IdHex": "0x31A",
+        "Name": "Operation button HDC [2] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 795,
+        "IdHex": "0x31B",
+        "Name": "Operation of tailgate interior button [2] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 796,
+        "IdHex": "0x31C",
+        "Name": "Status tire pressure [6] (RDC)",
+        "ModuleId": 32,
+        "ModuleName": "RDC"
+    },
+    {
+        "Id": 797,
+        "IdHex": "0x31D",
+        "Name": "Status of flat tire indicator [6] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 801,
+        "IdHex": "0x321",
+        "Name": "Operation button camera BF [2] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 802,
+        "IdHex": "0x322",
+        "Name": "Damper current [3] (EDCK_Modul)",
+        "ModuleId": 57,
+        "ModuleName": "EDCK_Modul"
+    },
+    {
+        "Id": 806,
+        "IdHex": "0x326",
+        "Name": "Status damper program [9] (VDM)",
+        "ModuleId": 57,
+        "ModuleName": "VDM"
+    },
+    {
+        "Id": 808,
+        "IdHex": "0x328",
+        "Name": "Relativzeit [9] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 813,
+        "IdHex": "0x32D",
+        "Name": "Display HDC [3] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 814,
+        "IdHex": "0x32E",
+        "Name": "Status climate internal control info [6] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 816,
+        "IdHex": "0x330",
+        "Name": "Mileage / Range [5] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi",
+        "Expressions": [
+            {
+                "Name": "Odometer",
+                "Expression": "({B2} * 256 * 256) + ({B1} * 256) + {B0}"
+            }
+        ]
+    },
+    {
+        "Id": 817,
+        "IdHex": "0x331",
+        "Name": "Programming of step cruise control [2] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 818,
+        "IdHex": "0x332",
+        "Name": "Driver display speed range [4] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 821,
+        "IdHex": "0x335",
+        "Name": "Status electric fuel pump [3] (EKP)",
+        "ModuleId": 23,
+        "ModuleName": "EKP"
+    },
+    {
+        "Id": 822,
+        "IdHex": "0x336",
+        "Name": "Display check control message (role) [3] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 823,
+        "IdHex": "0x337",
+        "Name": "Status fuel control DME [1] (DME1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1"
+    },
+    {
+        "Id": 824,
+        "IdHex": "0x338",
+        "Name": "Control display check control message [7] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 825,
+        "IdHex": "0x339",
+        "Name": "Status display climate [2] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 826,
+        "IdHex": "0x33A",
+        "Name": "Status Monitor Front [3] (CID_C_H / CID_C)",
+        "ModuleId": 115,
+        "ModuleName": "CID_C_H / CID_C"
+    },
+    {
+        "Id": 828,
+        "IdHex": "0x33C",
+        "Name": "Status Monitor Fond 1 [3] (CID_C_R)",
+        "ModuleId": 116,
+        "ModuleName": "CID_C_R"
+    },
+    {
+        "Id": 830,
+        "IdHex": "0x33E",
+        "Name": "Status Monitor Fond 2 [3] (CID_C_R_2)",
+        "ModuleId": 117,
+        "ModuleName": "CID_C_R_2"
+    },
+    {
+        "Id": 841,
+        "IdHex": "0x349",
+        "Name": "Raw data level tank (5) (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 843,
+        "IdHex": "0x34B",
+        "Name": "Seat back lock status FA [4] (SM_FA)",
+        "ModuleId": 109,
+        "ModuleName": "SM_FA"
+    },
+    {
+        "Id": 845,
+        "IdHex": "0x34D",
+        "Name": "Status seat back lock BF [2] (SM_BF)",
+        "ModuleId": 110,
+        "ModuleName": "SM_BF"
+    },
+    {
+        "Id": 847,
+        "IdHex": "0x34F",
+        "Name": "Status contact handbrake [4] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 858,
+        "IdHex": "0x35A",
+        "Name": "Appointment Condition Based Service [2] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 860,
+        "IdHex": "0x35C",
+        "Name": "Status on-board computer [5] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 862,
+        "IdHex": "0x35E",
+        "Name": "On-board computer data (trip data) [5] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 864,
+        "IdHex": "0x360",
+        "Name": "Data on-board computer (start of journey) [2] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 866,
+        "IdHex": "0x362",
+        "Name": "Data on-board computer (average values) [4] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 868,
+        "IdHex": "0x364",
+        "Name": "Data on-board computer (arrival) [2] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 869,
+        "IdHex": "0x365",
+        "Name": "Status terminal request [2] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 870,
+        "IdHex": "0x366",
+        "Name": "Display combination / external display [3] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 871,
+        "IdHex": "0x367",
+        "Name": "Control display of demand-oriented service [7] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 877,
+        "IdHex": "0x36D",
+        "Name": "Setting the driving dynamics switch [1] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 884,
+        "IdHex": "0x374",
+        "Name": "wheel tolerance adjustment [7] (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 886,
+        "IdHex": "0x376",
+        "Name": "Status wear lamella [3] (VGSG)",
+        "ModuleId": 25,
+        "ModuleName": "VGSG"
+    },
+    {
+        "Id": 893,
+        "IdHex": "0x37D",
+        "Name": "Status DKG [1] (DKG)",
+        "ModuleId": 24,
+        "ModuleName": "DKG"
+    },
+    {
+        "Id": 894,
+        "IdHex": "0x37E",
+        "Name": "Temperatur_Bremse [1] (DSC_CT)",
+        "ModuleId": 41,
+        "ModuleName": "DSC_CT"
+    },
+    {
+        "Id": 895,
+        "IdHex": "0x37F",
+        "Name": "Range of diesel exhaust gas additive [1] (DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DDE1"
+    },
+    {
+        "Id": 896,
+        "IdHex": "0x380",
+        "Name": "chassis number [5] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 897,
+        "IdHex": "0x381",
+        "Name": "Electronic engine oil dipstick [10] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 898,
+        "IdHex": "0x382",
+        "Name": "Electronic engine oil dipstick M [1] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 899,
+        "IdHex": "0x383",
+        "Name": "Motor data 2 [2] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 904,
+        "IdHex": "0x388",
+        "Name": "Vehicle type [14] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 907,
+        "IdHex": "0x38B",
+        "Name": "Status battery [1] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 910,
+        "IdHex": "0x38E",
+        "Name": "Start speed [1] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 914,
+        "IdHex": "0x392",
+        "Name": "Status System AFS [3] (AFS)",
+        "ModuleId": 22,
+        "ModuleName": "AFS"
+    },
+    {
+        "Id": 916,
+        "IdHex": "0x394",
+        "Name": "RDA request / data storage [5] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 917,
+        "IdHex": "0x395",
+        "Name": "Coding power management [2] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 920,
+        "IdHex": "0x398",
+        "Name": "Operation chassis [14] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 921,
+        "IdHex": "0x399",
+        "Name": "Status M-Drive (3) (DME1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1"
+    },
+    {
+        "Id": 926,
+        "IdHex": "0x39E",
+        "Name": "Operation time / date [1] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 928,
+        "IdHex": "0x3A0",
+        "Name": "Vehicle state [4] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 931,
+        "IdHex": "0x3A3",
+        "Name": "Request Remote Services [2] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 937,
+        "IdHex": "0x3A9",
+        "Name": "Status motor control CKM [2] (DME1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1"
+    },
+    {
+        "Id": 939,
+        "IdHex": "0x3AB",
+        "Name": "Status Shiftlights CKM [2] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 940,
+        "IdHex": "0x3AC",
+        "Name": "run-on time terminal 30 error-controlled [2] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 944,
+        "IdHex": "0x3B0",
+        "Name": "Status gear reverse [2] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 945,
+        "IdHex": "0x3B1",
+        "Name": "Gear data 3 [2] (EGS_MECH / DKG)",
+        "ModuleId": 24,
+        "ModuleName": "EGS_MECH / DKG"
+    },
+    {
+        "Id": 947,
+        "IdHex": "0x3B3",
+        "Name": "Power management consumer control [9] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 948,
+        "IdHex": "0x3B4",
+        "Name": "Power management battery voltage [11] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 949,
+        "IdHex": "0x3B5",
+        "Name": "Status water valve [6] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 950,
+        "IdHex": "0x3B6",
+        "Name": "Position window lifter FAT [6] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 951,
+        "IdHex": "0x3B7",
+        "Name": "Position window lifter FATH [5] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 952,
+        "IdHex": "0x3B8",
+        "Name": "Position window regulator BFT [6] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 953,
+        "IdHex": "0x3B9",
+        "Name": "Position window regulator BFTH [5] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 954,
+        "IdHex": "0x3BA",
+        "Name": "Position SHD [10] (FZD)",
+        "ModuleId": 86,
+        "ModuleName": "FZD"
+    },
+    {
+        "Id": 954,
+        "IdHex": "0x3BA",
+        "Name": "Position SHD [10] (MDS)",
+        "ModuleId": 68,
+        "ModuleName": "MDS"
+    },
+    {
+        "Id": 956,
+        "IdHex": "0x3BC",
+        "Name": "Position window lifter security vehicle [2] (Sender unknown)",
+        "ModuleId": 255,
+        "ModuleName": "Sender unknown"
+    },
+    {
+        "Id": 957,
+        "IdHex": "0x3BD",
+        "Name": "Status consumer shutdown [2] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 958,
+        "IdHex": "0x3BE",
+        "Name": "Follow-up time power supply [5] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 959,
+        "IdHex": "0x3BF",
+        "Name": "Position window rear window [1] (CTM)",
+        "ModuleId": 36,
+        "ModuleName": "CTM"
+    },
+    {
+        "Id": 960,
+        "IdHex": "0x3C0",
+        "Name": "Configuration FAS [3] (SM_FA)",
+        "ModuleId": 109,
+        "ModuleName": "SM_FA"
+    },
+    {
+        "Id": 961,
+        "IdHex": "0x3C1",
+        "Name": "Configuration BFS [3] (SM_BF)",
+        "ModuleId": 110,
+        "ModuleName": "SM_BF"
+    },
+    {
+        "Id": 964,
+        "IdHex": "0x3C4",
+        "Name": "Status EDCK CKM [2] (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 967,
+        "IdHex": "0x3C7",
+        "Name": "Access radio [1] (RAD1)",
+        "ModuleId": 99,
+        "ModuleName": "RAD1"
+    },
+    {
+        "Id": 968,
+        "IdHex": "0x3C8",
+        "Name": "Operation push button radio [1] (RAD1)",
+        "ModuleId": 99,
+        "ModuleName": "RAD1"
+    },
+    {
+        "Id": 974,
+        "IdHex": "0x3CE",
+        "Name": "Radio audio control interface display [1] (ACI)",
+        "ModuleId": 241,
+        "ModuleName": "ACI"
+    },
+    {
+        "Id": 975,
+        "IdHex": "0x3CF",
+        "Name": "Acknowledgment access radio audio control interface [1] (ACI)",
+        "ModuleId": 241,
+        "ModuleName": "ACI"
+    },
+    {
+        "Id": 979,
+        "IdHex": "0x3D3",
+        "Name": "Status solar sensor [1] (FZD)",
+        "ModuleId": 86,
+        "ModuleName": "FZD"
+    },
+    {
+        "Id": 980,
+        "IdHex": "0x3D4",
+        "Name": "Configuration of central locking CKM [3] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 981,
+        "IdHex": "0x3D5",
+        "Name": "Status central locking CKM [4] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 982,
+        "IdHex": "0x3D6",
+        "Name": "Configuration DWA CKM [1] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 983,
+        "IdHex": "0x3D7",
+        "Name": "Status DWA CKM [2] (FZD)",
+        "ModuleId": 86,
+        "ModuleName": "FZD"
+    },
+    {
+        "Id": 983,
+        "IdHex": "0x3D7",
+        "Name": "Status DWA CKM [2] (DWA)",
+        "ModuleId": 65,
+        "ModuleName": "DWA"
+    },
+    {
+        "Id": 984,
+        "IdHex": "0x3D8",
+        "Name": "Configuration RLS CKM [3] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 985,
+        "IdHex": "0x3D9",
+        "Name": "Status RLS CKM [4] (FZD)",
+        "ModuleId": 86,
+        "ModuleName": "FZD"
+    },
+    {
+        "Id": 986,
+        "IdHex": "0x3DA",
+        "Name": "Configuration of memory positions CKM [1] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 987,
+        "IdHex": "0x3DB",
+        "Name": "Status memory positions CKM [3] (SM_FA)",
+        "ModuleId": 109,
+        "ModuleName": "SM_FA"
+    },
+    {
+        "Id": 988,
+        "IdHex": "0x3DC",
+        "Name": "Configuration light CKM [3] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 989,
+        "IdHex": "0x3DD",
+        "Name": "Status light CKM [4] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 990,
+        "IdHex": "0x3DE",
+        "Name": "Configuration Climate CKM [5] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 991,
+        "IdHex": "0x3DF",
+        "Name": "Status Klima CKM [6] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 994,
+        "IdHex": "0x3E2",
+        "Name": "Configuration of tailgate CKM [1] (CHAMP_M_ASK2 / CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CHAMP_M_ASK2 / CCC_GW"
+    },
+    {
+        "Id": 995,
+        "IdHex": "0x3E3",
+        "Name": "Status tailgate CKM [1] (HKL)",
+        "ModuleId": 107,
+        "ModuleName": "HKL"
+    },
+    {
+        "Id": 996,
+        "IdHex": "0x3E4",
+        "Name": "Configuration rear view camera CKM [2] (CCC_GW)",
+        "ModuleId": 98,
+        "ModuleName": "CCC_GW"
+    },
+    {
+        "Id": 997,
+        "IdHex": "0x3E5",
+        "Name": "Status rear view camera CKM [2] (RFK)",
+        "ModuleId": 119,
+        "ModuleName": "RFK"
+    },
+    {
+        "Id": 1001,
+        "IdHex": "0x3E9",
+        "Name": "Marker 1 [1] (Sender unknown)",
+        "ModuleId": 255,
+        "ModuleName": "Sender unknown"
+    },
+    {
+        "Id": 1002,
+        "IdHex": "0x3EA",
+        "Name": "Marker 2 [3] (Diagnosetool_K_CAN_System)",
+        "ModuleId": 126,
+        "ModuleName": "Diagnosetool_K_CAN_System"
+    },
+    {
+        "Id": 1003,
+        "IdHex": "0x3EB",
+        "Name": "Marker 3 [1] (Diagnosetool_PT_CAN)",
+        "ModuleId": 125,
+        "ModuleName": "Diagnosetool_PT_CAN"
+    },
+    {
+        "Id": 1007,
+        "IdHex": "0x3EF",
+        "Name": "OBD data motor [3] (DME1 / DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1 / DDE1"
+    },
+    {
+        "Id": 1008,
+        "IdHex": "0x3F0",
+        "Name": "Configuration light extended CKM [1] (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 1009,
+        "IdHex": "0x3F1",
+        "Name": "Status light extended CKM [1] (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 1016,
+        "IdHex": "0x3F8",
+        "Name": "Air conditioning rear control [3] (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 1018,
+        "IdHex": "0x3FA",
+        "Name": "Status target climate rear [1] (FKA)",
+        "ModuleId": 121,
+        "ModuleName": "FKA"
+    },
+    {
+        "Id": 1022,
+        "IdHex": "0x3FE",
+        "Name": "Request CAN_Testtool SI-Bus [5] (Diagnosetool_K_CAN_System)",
+        "ModuleId": 126,
+        "ModuleName": "Diagnosetool_K_CAN_System"
+    },
+    {
+        "Id": 1023,
+        "IdHex": "0x3FF",
+        "Name": "Transmission data SI bus CAN_Testtool [5] (Sender unknown)",
+        "ModuleId": 255,
+        "ModuleName": "Sender unknown"
+    },
+    {
+        "Id": 1152,
+        "IdHex": "0x480",
+        "Name": "Network management (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 1153,
+        "IdHex": "0x481",
+        "Name": "Network management (ACSM)",
+        "ModuleId": 1,
+        "ModuleName": "ACSM"
+    },
+    {
+        "Id": 1153,
+        "IdHex": "0x481",
+        "Name": "Network management (ACSM_ROSE)",
+        "ModuleId": 1,
+        "ModuleName": "ACSM_ROSE"
+    },
+    {
+        "Id": 1154,
+        "IdHex": "0x482",
+        "Name": "Network management (SZL_LWS)",
+        "ModuleId": 2,
+        "ModuleName": "SZL_LWS"
+    },
+    {
+        "Id": 1170,
+        "IdHex": "0x492",
+        "Name": "Network management (DDE1)",
+        "ModuleId": 18,
+        "ModuleName": "DDE1"
+    },
+    {
+        "Id": 1170,
+        "IdHex": "0x492",
+        "Name": "Network management (DME1)",
+        "ModuleId": 18,
+        "ModuleName": "DME1"
+    },
+    {
+        "Id": 1174,
+        "IdHex": "0x496",
+        "Name": "Network management (AFS)",
+        "ModuleId": 22,
+        "ModuleName": "AFS"
+    },
+    {
+        "Id": 1175,
+        "IdHex": "0x497",
+        "Name": "Network management (EKP)",
+        "ModuleId": 23,
+        "ModuleName": "EKP"
+    },
+    {
+        "Id": 1176,
+        "IdHex": "0x498",
+        "Name": "Network management (EGS_EL)",
+        "ModuleId": 24,
+        "ModuleName": "EGS_EL"
+    },
+    {
+        "Id": 1177,
+        "IdHex": "0x499",
+        "Name": "Network management (VGSG)",
+        "ModuleId": 25,
+        "ModuleName": "VGSG"
+    },
+    {
+        "Id": 1179,
+        "IdHex": "0x49B",
+        "Name": "Network management (VVT1)",
+        "ModuleId": 27,
+        "ModuleName": "VVT1"
+    },
+    {
+        "Id": 1180,
+        "IdHex": "0x49C",
+        "Name": "Network management (LDM)",
+        "ModuleId": 28,
+        "ModuleName": "LDM"
+    },
+    {
+        "Id": 1182,
+        "IdHex": "0x49E",
+        "Name": "Network management (VVT2)",
+        "ModuleId": 30,
+        "ModuleName": "VVT2"
+    },
+    {
+        "Id": 1184,
+        "IdHex": "0x4A0",
+        "Name": "Network management (RDC)",
+        "ModuleId": 32,
+        "ModuleName": "RDC"
+    },
+    {
+        "Id": 1185,
+        "IdHex": "0x4A1",
+        "Name": "Network management (ACC_Sensor)",
+        "ModuleId": 33,
+        "ModuleName": "ACC_Sensor"
+    },
+    {
+        "Id": 1187,
+        "IdHex": "0x4A3",
+        "Name": "Network management (ARS_Modul)",
+        "ModuleId": 35,
+        "ModuleName": "ARS_Modul"
+    },
+    {
+        "Id": 1188,
+        "IdHex": "0x4A4",
+        "Name": "Network management (CTM / CVM_V)",
+        "ModuleId": 36,
+        "ModuleName": "CTM / CVM_V"
+    },
+    {
+        "Id": 1189,
+        "IdHex": "0x4A5",
+        "Name": "Network management (RSC_VDA / SC_VDA)",
+        "ModuleId": 37,
+        "ModuleName": "RSC_VDA / SC_VDA"
+    },
+    {
+        "Id": 1190,
+        "IdHex": "0x4A6",
+        "Name": "Network management (RSE)",
+        "ModuleId": 38,
+        "ModuleName": "RSE"
+    },
+    {
+        "Id": 1191,
+        "IdHex": "0x4A7",
+        "Name": "Network management (PGS)",
+        "ModuleId": 39,
+        "ModuleName": "PGS"
+    },
+    {
+        "Id": 1193,
+        "IdHex": "0x4A9",
+        "Name": "Network management (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 1194,
+        "IdHex": "0x4AA",
+        "Name": "Network management (EMF)",
+        "ModuleId": 42,
+        "ModuleName": "EMF"
+    },
+    {
+        "Id": 1200,
+        "IdHex": "0x4B0",
+        "Name": "Network management (EPS)",
+        "ModuleId": 48,
+        "ModuleName": "EPS"
+    },
+    {
+        "Id": 1201,
+        "IdHex": "0x4B1",
+        "Name": "Network management (MMC)",
+        "ModuleId": 49,
+        "ModuleName": "MMC"
+    },
+    {
+        "Id": 1206,
+        "IdHex": "0x4B6",
+        "Name": "Network management (TEL_BPI / TEL_JAP / TEL_MULF)",
+        "ModuleId": 54,
+        "ModuleName": "TEL_BPI / TEL_JAP / TEL_MULF"
+    },
+    {
+        "Id": 1207,
+        "IdHex": "0x4B7",
+        "Name": "Network management (AMP_HIFI / AMP_TOP)",
+        "ModuleId": 55,
+        "ModuleName": "AMP_HIFI / AMP_TOP"
+    },
+    {
+        "Id": 1208,
+        "IdHex": "0x4B8",
+        "Name": "Network management (EHC)",
+        "ModuleId": 56,
+        "ModuleName": "EHC"
+    },
+    {
+        "Id": 1209,
+        "IdHex": "0x4B9",
+        "Name": "Network management (VDM)",
+        "ModuleId": 57,
+        "ModuleName": "VDM"
+    },
+    {
+        "Id": 1210,
+        "IdHex": "0x4BA",
+        "Name": "Network management (KHM)",
+        "ModuleId": 58,
+        "ModuleName": "KHM"
+    },
+    {
+        "Id": 1211,
+        "IdHex": "0x4BB",
+        "Name": "Network management (JNAV)",
+        "ModuleId": 59,
+        "ModuleName": "JNAV"
+    },
+    {
+        "Id": 1212,
+        "IdHex": "0x4BC",
+        "Name": "Network management (CDC)",
+        "ModuleId": 60,
+        "ModuleName": "CDC"
+    },
+    {
+        "Id": 1213,
+        "IdHex": "0x4BD",
+        "Name": "Network management (HUD)",
+        "ModuleId": 61,
+        "ModuleName": "HUD"
+    },
+    {
+        "Id": 1216,
+        "IdHex": "0x4C0",
+        "Name": "Network management (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 1217,
+        "IdHex": "0x4C1",
+        "Name": "Network management (DWA)",
+        "ModuleId": 65,
+        "ModuleName": "DWA"
+    },
+    {
+        "Id": 1220,
+        "IdHex": "0x4C4",
+        "Name": "Network management (MDS)",
+        "ModuleId": 68,
+        "ModuleName": "MDS"
+    },
+    {
+        "Id": 1221,
+        "IdHex": "0x4C5",
+        "Name": "Network management (RLS)",
+        "ModuleId": 69,
+        "ModuleName": "RLS"
+    },
+    {
+        "Id": 1224,
+        "IdHex": "0x4C8",
+        "Name": "Network management (VSW)",
+        "ModuleId": 72,
+        "ModuleName": "VSW"
+    },
+    {
+        "Id": 1227,
+        "IdHex": "0x4CB",
+        "Name": "Network management (VM)",
+        "ModuleId": 75,
+        "ModuleName": "VM"
+    },
+    {
+        "Id": 1232,
+        "IdHex": "0x4D0",
+        "Name": "Network management (Emergency power siren)",
+        "ModuleId": 80,
+        "ModuleName": "Emergency power siren"
+    },
+    {
+        "Id": 1235,
+        "IdHex": "0x4D3",
+        "Name": "Network management (IBOC)",
+        "ModuleId": 83,
+        "ModuleName": "IBOC"
+    },
+    {
+        "Id": 1236,
+        "IdHex": "0x4D4",
+        "Name": "Network management (SDARS)",
+        "ModuleId": 84,
+        "ModuleName": "SDARS"
+    },
+    {
+        "Id": 1237,
+        "IdHex": "0x4D5",
+        "Name": "Network management (ISpeechBox)",
+        "ModuleId": 85,
+        "ModuleName": "ISpeechBox"
+    },
+    {
+        "Id": 1238,
+        "IdHex": "0x4D6",
+        "Name": "Network management (FZD)",
+        "ModuleId": 86,
+        "ModuleName": "FZD"
+    },
+    {
+        "Id": 1239,
+        "IdHex": "0x4D7",
+        "Name": "Network management (NVC)",
+        "ModuleId": 87,
+        "ModuleName": "NVC"
+    },
+    {
+        "Id": 1243,
+        "IdHex": "0x4DB",
+        "Name": "Netzwerkmanagement (DAB)",
+        "ModuleId": 91,
+        "ModuleName": "DAB"
+    },
+    {
+        "Id": 1244,
+        "IdHex": "0x4DC",
+        "Name": "Netzwerkmanagement (Behoerde)",
+        "ModuleId": 92,
+        "ModuleName": "Behoerde"
+    },
+    {
+        "Id": 1246,
+        "IdHex": "0x4DE",
+        "Name": "Netzwerkmanagement (GWS)",
+        "ModuleId": 94,
+        "ModuleName": "GWS"
+    },
+    {
+        "Id": 1247,
+        "IdHex": "0x4DF",
+        "Name": "Netzwerkmanagement (FLA)",
+        "ModuleId": 95,
+        "ModuleName": "FLA"
+    },
+    {
+        "Id": 1248,
+        "IdHex": "0x4E0",
+        "Name": "Network management (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 1250,
+        "IdHex": "0x4E2",
+        "Name": "Netzwerkmanagement (CCC_GW/CHAMP_M_ASK2)",
+        "ModuleId": 98,
+        "ModuleName": "CCC_GW/CHAMP_M_ASK2"
+    },
+    {
+        "Id": 1251,
+        "IdHex": "0x4E3",
+        "Name": "Netzwerkmanagement (CCC_MM)",
+        "ModuleId": 99,
+        "ModuleName": "CCC_MM"
+    },
+    {
+        "Id": 1252,
+        "IdHex": "0x4E4",
+        "Name": "Netzwerkmanagement (PDC)",
+        "ModuleId": 100,
+        "ModuleName": "PDC"
+    },
+    {
+        "Id": 1255,
+        "IdHex": "0x4E7",
+        "Name": "Netzwerkmanagement (ZBE)",
+        "ModuleId": 103,
+        "ModuleName": "ZBE"
+    },
+    {
+        "Id": 1259,
+        "IdHex": "0x4EB",
+        "Name": "Netzwerkmanagement (HKL)",
+        "ModuleId": 107,
+        "ModuleName": "HKL"
+    },
+    {
+        "Id": 1261,
+        "IdHex": "0x4ED",
+        "Name": "Netzwerkmanagement (SM_FA)",
+        "ModuleId": 109,
+        "ModuleName": "SM_FA"
+    },
+    {
+        "Id": 1262,
+        "IdHex": "0x4EE",
+        "Name": "Netzwerkmanagement (SM_BF)",
+        "ModuleId": 110,
+        "ModuleName": "SM_BF"
+    },
+    {
+        "Id": 1265,
+        "IdHex": "0x4F1",
+        "Name": "Netzwerkmanagement (AHM)",
+        "ModuleId": 113,
+        "ModuleName": "AHM"
+    },
+    {
+        "Id": 1266,
+        "IdHex": "0x4F2",
+        "Name": "Network management (FRMFA)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA"
+    },
+    {
+        "Id": 1267,
+        "IdHex": "0x4F3",
+        "Name": "Netzwerkmanagement (CID_C/CID_C_H)",
+        "ModuleId": 115,
+        "ModuleName": "CID_C/CID_C_H"
+    },
+    {
+        "Id": 1268,
+        "IdHex": "0x4F4",
+        "Name": "Netzwerkmanagement (CID_C_R)",
+        "ModuleId": 116,
+        "ModuleName": "CID_C_R"
+    },
+    {
+        "Id": 1269,
+        "IdHex": "0x4F5",
+        "Name": "Netzwerkmanagement (CID_C_R_2)",
+        "ModuleId": 117,
+        "ModuleName": "CID_C_R_2"
+    },
+    {
+        "Id": 1271,
+        "IdHex": "0x4F7",
+        "Name": "Netzwerkmanagement (RFK)",
+        "ModuleId": 119,
+        "ModuleName": "RFK"
+    },
+    {
+        "Id": 1272,
+        "IdHex": "0x4F8",
+        "Name": "Netzwerkmanagement (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 1273,
+        "IdHex": "0x4F9",
+        "Name": "Netzwerkmanagement (FKA)",
+        "ModuleId": 121,
+        "ModuleName": "FKA"
+    },
+    {
+        "Id": 1277,
+        "IdHex": "0x4FD",
+        "Name": "Netzwerkmanagement (Diagnosetool_PT_CAN)",
+        "ModuleId": 125,
+        "ModuleName": "Diagnosetool_PT_CAN"
+    },
+    {
+        "Id": 1278,
+        "IdHex": "0x4FE",
+        "Name": "Netzwerkmanagement (Diagnosetool_K_CAN_System)",
+        "ModuleId": 126,
+        "ModuleName": "Diagnosetool_K_CAN_System"
+    },
+    {
+        "Id": 1280,
+        "IdHex": "0x500",
+        "Name": "Datentransfer [1] (Sender unbekannt)",
+        "ModuleId": 255,
+        "ModuleName": "Sender unbekannt"
+    },
+    {
+        "Id": 1289,
+        "IdHex": "0x509",
+        "Name": "Netzwerkmanagement (XE_HDLI_LH_ALC)",
+        "ModuleId": 137,
+        "ModuleName": "XE_HDLI_LH_ALC"
+    },
+    {
+        "Id": 1290,
+        "IdHex": "0x50A",
+        "Name": "Netzwerkmanagement (XE_HDLI_RH_ALC)",
+        "ModuleId": 138,
+        "ModuleName": "XE_HDLI_RH_ALC"
+    },
+    {
+        "Id": 1291,
+        "IdHex": "0x50B",
+        "Name": "Netzwerkmanagement (CNV)",
+        "ModuleId": 139,
+        "ModuleName": "CNV"
+    },
+    {
+        "Id": 1317,
+        "IdHex": "0x525",
+        "Name": "Netzwerkmanagement (EDCS_VL)",
+        "ModuleId": 165,
+        "ModuleName": "EDCS_VL"
+    },
+    {
+        "Id": 1318,
+        "IdHex": "0x526",
+        "Name": "Netzwerkmanagement (EDCS_VR)",
+        "ModuleId": 166,
+        "ModuleName": "EDCS_VR"
+    },
+    {
+        "Id": 1319,
+        "IdHex": "0x527",
+        "Name": "Netzwerkmanagement (EDCS_HL)",
+        "ModuleId": 167,
+        "ModuleName": "EDCS_HL"
+    },
+    {
+        "Id": 1320,
+        "IdHex": "0x528",
+        "Name": "Netzwerkmanagement (EDCS_HR)",
+        "ModuleId": 168,
+        "ModuleName": "EDCS_HR"
+    },
+    {
+        "Id": 1393,
+        "IdHex": "0x571",
+        "Name": "Netzwerkmanagement (Diagnosedose/D_CAN_Tester)",
+        "ModuleId": 241,
+        "ModuleName": "Diagnosedose/D_CAN_Tester"
+    },
+    {
+        "Id": 1408,
+        "IdHex": "0x580",
+        "Name": "Dienste (JBBF)",
+        "ModuleId": 0,
+        "ModuleName": "JBBF"
+    },
+    {
+        "Id": 1409,
+        "IdHex": "0x581",
+        "Name": "Dienste (ACSM/ACSM_ROSE)",
+        "ModuleId": 1,
+        "ModuleName": "ACSM/ACSM_ROSE"
+    },
+    {
+        "Id": 1410,
+        "IdHex": "0x582",
+        "Name": "Dienste (SZL_LWS)",
+        "ModuleId": 2,
+        "ModuleName": "SZL_LWS"
+    },
+    {
+        "Id": 1426,
+        "IdHex": "0x592",
+        "Name": "Dienste (DDE1/DME1)",
+        "ModuleId": 18,
+        "ModuleName": "DDE1/DME1"
+    },
+    {
+        "Id": 1430,
+        "IdHex": "0x596",
+        "Name": "Dienste (AFS)",
+        "ModuleId": 22,
+        "ModuleName": "AFS"
+    },
+    {
+        "Id": 1431,
+        "IdHex": "0x597",
+        "Name": "Dienste (EKP)",
+        "ModuleId": 23,
+        "ModuleName": "EKP"
+    },
+    {
+        "Id": 1432,
+        "IdHex": "0x598",
+        "Name": "Dienste (EGS_EL)",
+        "ModuleId": 24,
+        "ModuleName": "EGS_EL"
+    },
+    {
+        "Id": 1433,
+        "IdHex": "0x599",
+        "Name": "Dienste (VGSG)",
+        "ModuleId": 25,
+        "ModuleName": "VGSG"
+    },
+    {
+        "Id": 1435,
+        "IdHex": "0x59B",
+        "Name": "Dienste (VVT1)",
+        "ModuleId": 27,
+        "ModuleName": "VVT1"
+    },
+    {
+        "Id": 1436,
+        "IdHex": "0x59C",
+        "Name": "Dienste (LDM)",
+        "ModuleId": 28,
+        "ModuleName": "LDM"
+    },
+    {
+        "Id": 1438,
+        "IdHex": "0x59E",
+        "Name": "Dienste (VVT2)",
+        "ModuleId": 30,
+        "ModuleName": "VVT2"
+    },
+    {
+        "Id": 1440,
+        "IdHex": "0x5A0",
+        "Name": "Dienste (RDC)",
+        "ModuleId": 32,
+        "ModuleName": "RDC"
+    },
+    {
+        "Id": 1441,
+        "IdHex": "0x5A1",
+        "Name": "Dienste (ACC_Sensor)",
+        "ModuleId": 33,
+        "ModuleName": "ACC_Sensor"
+    },
+    {
+        "Id": 1443,
+        "IdHex": "0x5A3",
+        "Name": "Dienste (ARS_Modul)",
+        "ModuleId": 35,
+        "ModuleName": "ARS_Modul"
+    },
+    {
+        "Id": 1444,
+        "IdHex": "0x5A4",
+        "Name": "Dienste (CTM/CVM_V)",
+        "ModuleId": 36,
+        "ModuleName": "CTM/CVM_V"
+    },
+    {
+        "Id": 1445,
+        "IdHex": "0x5A5",
+        "Name": "Dienste (RSC_VDA/SC_VDA)",
+        "ModuleId": 37,
+        "ModuleName": "RSC_VDA/SC_VDA"
+    },
+    {
+        "Id": 1446,
+        "IdHex": "0x5A6",
+        "Name": "Dienste (RSE)",
+        "ModuleId": 38,
+        "ModuleName": "RSE"
+    },
+    {
+        "Id": 1447,
+        "IdHex": "0x5A7",
+        "Name": "Dienste (PGS)",
+        "ModuleId": 39,
+        "ModuleName": "PGS"
+    },
+    {
+        "Id": 1449,
+        "IdHex": "0x5A9",
+        "Name": "Dienste (EHB3)",
+        "ModuleId": 41,
+        "ModuleName": "EHB3"
+    },
+    {
+        "Id": 1450,
+        "IdHex": "0x5AA",
+        "Name": "Dienste (EMF)",
+        "ModuleId": 42,
+        "ModuleName": "EMF"
+    },
+    {
+        "Id": 1456,
+        "IdHex": "0x5B0",
+        "Name": "Dienste (EPS)",
+        "ModuleId": 48,
+        "ModuleName": "EPS"
+    },
+    {
+        "Id": 1457,
+        "IdHex": "0x5B1",
+        "Name": "Dienste (MMC)",
+        "ModuleId": 49,
+        "ModuleName": "MMC"
+    },
+    {
+        "Id": 1462,
+        "IdHex": "0x5B6",
+        "Name": "Dienste (TEL_BPI/TEL_JAP/TEL_MULF)",
+        "ModuleId": 54,
+        "ModuleName": "TEL_BPI/TEL_JAP/TEL_MULF"
+    },
+    {
+        "Id": 1463,
+        "IdHex": "0x5B7",
+        "Name": "Dienste (AMP_HIFI/AMP_TOP)",
+        "ModuleId": 55,
+        "ModuleName": "AMP_HIFI/AMP_TOP"
+    },
+    {
+        "Id": 1464,
+        "IdHex": "0x5B8",
+        "Name": "Dienste (EHC)",
+        "ModuleId": 56,
+        "ModuleName": "EHC"
+    },
+    {
+        "Id": 1465,
+        "IdHex": "0x5B9",
+        "Name": "Dienste (VDM)",
+        "ModuleId": 57,
+        "ModuleName": "VDM"
+    },
+    {
+        "Id": 1466,
+        "IdHex": "0x5BA",
+        "Name": "Dienste (KHM)",
+        "ModuleId": 58,
+        "ModuleName": "KHM"
+    },
+    {
+        "Id": 1467,
+        "IdHex": "0x5BB",
+        "Name": "Dienste (JNAV)",
+        "ModuleId": 59,
+        "ModuleName": "JNAV"
+    },
+    {
+        "Id": 1468,
+        "IdHex": "0x5BC",
+        "Name": "Dienste (CDC)",
+        "ModuleId": 60,
+        "ModuleName": "CDC"
+    },
+    {
+        "Id": 1469,
+        "IdHex": "0x5BD",
+        "Name": "Dienste (HUD)",
+        "ModuleId": 61,
+        "ModuleName": "HUD"
+    },
+    {
+        "Id": 1472,
+        "IdHex": "0x5C0",
+        "Name": "Dienste (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 1473,
+        "IdHex": "0x5C1",
+        "Name": "Dienste (DWA)",
+        "ModuleId": 65,
+        "ModuleName": "DWA"
+    },
+    {
+        "Id": 1476,
+        "IdHex": "0x5C4",
+        "Name": "Dienste (MDS)",
+        "ModuleId": 68,
+        "ModuleName": "MDS"
+    },
+    {
+        "Id": 1477,
+        "IdHex": "0x5C5",
+        "Name": "Dienste (RLS)",
+        "ModuleId": 69,
+        "ModuleName": "RLS"
+    },
+    {
+        "Id": 1480,
+        "IdHex": "0x5C8",
+        "Name": "Dienste (VSW)",
+        "ModuleId": 72,
+        "ModuleName": "VSW"
+    },
+    {
+        "Id": 1483,
+        "IdHex": "0x5CB",
+        "Name": "Dienste (VM)",
+        "ModuleId": 75,
+        "ModuleName": "VM"
+    },
+    {
+        "Id": 1488,
+        "IdHex": "0x5D0",
+        "Name": "Dienste (Notstrom-Sirene)",
+        "ModuleId": 80,
+        "ModuleName": "Notstrom-Sirene"
+    },
+    {
+        "Id": 1491,
+        "IdHex": "0x5D3",
+        "Name": "Dienste (IBOC)",
+        "ModuleId": 83,
+        "ModuleName": "IBOC"
+    },
+    {
+        "Id": 1492,
+        "IdHex": "0x5D4",
+        "Name": "Dienste (SDARS)",
+        "ModuleId": 84,
+        "ModuleName": "SDARS"
+    },
+    {
+        "Id": 1493,
+        "IdHex": "0x5D5",
+        "Name": "Dienste (ISpeechBox)",
+        "ModuleId": 85,
+        "ModuleName": "ISpeechBox"
+    },
+    {
+        "Id": 1494,
+        "IdHex": "0x5D6",
+        "Name": "Dienste (FZD)",
+        "ModuleId": 86,
+        "ModuleName": "FZD"
+    },
+    {
+        "Id": 1495,
+        "IdHex": "0x5D7",
+        "Name": "Dienste (NVC)",
+        "ModuleId": 87,
+        "ModuleName": "NVC"
+    },
+    {
+        "Id": 1499,
+        "IdHex": "0x5DB",
+        "Name": "Dienste (DAB)",
+        "ModuleId": 91,
+        "ModuleName": "DAB"
+    },
+    {
+        "Id": 1500,
+        "IdHex": "0x5DC",
+        "Name": "Dienste (Behoerde)",
+        "ModuleId": 92,
+        "ModuleName": "Behoerde"
+    },
+    {
+        "Id": 1502,
+        "IdHex": "0x5DE",
+        "Name": "Dienste (GWS)",
+        "ModuleId": 94,
+        "ModuleName": "GWS"
+    },
+    {
+        "Id": 1503,
+        "IdHex": "0x5DF",
+        "Name": "Dienste (FLA)",
+        "ModuleId": 95,
+        "ModuleName": "FLA"
+    },
+    {
+        "Id": 1504,
+        "IdHex": "0x5E0",
+        "Name": "Dienste (Kombi)",
+        "ModuleId": 96,
+        "ModuleName": "Kombi"
+    },
+    {
+        "Id": 1506,
+        "IdHex": "0x5E2",
+        "Name": "Dienste (CCC_GW/CHAMP_M_ASK2)",
+        "ModuleId": 98,
+        "ModuleName": "CCC_GW/CHAMP_M_ASK2"
+    },
+    {
+        "Id": 1507,
+        "IdHex": "0x5E3",
+        "Name": "Dienste (CCC_MM)",
+        "ModuleId": 99,
+        "ModuleName": "CCC_MM"
+    },
+    {
+        "Id": 1508,
+        "IdHex": "0x5E4",
+        "Name": "Dienste (PDC)",
+        "ModuleId": 100,
+        "ModuleName": "PDC"
+    },
+    {
+        "Id": 1511,
+        "IdHex": "0x5E7",
+        "Name": "Dienste (ZBE)",
+        "ModuleId": 103,
+        "ModuleName": "ZBE"
+    },
+    {
+        "Id": 1515,
+        "IdHex": "0x5EB",
+        "Name": "Dienste (HKL)",
+        "ModuleId": 107,
+        "ModuleName": "HKL"
+    },
+    {
+        "Id": 1517,
+        "IdHex": "0x5ED",
+        "Name": "Dienste (SM_FA)",
+        "ModuleId": 109,
+        "ModuleName": "SM_FA"
+    },
+    {
+        "Id": 1518,
+        "IdHex": "0x5EE",
+        "Name": "Dienste (SM_BF)",
+        "ModuleId": 110,
+        "ModuleName": "SM_BF"
+    },
+    {
+        "Id": 1521,
+        "IdHex": "0x5F1",
+        "Name": "Dienste (AHM)",
+        "ModuleId": 113,
+        "ModuleName": "AHM"
+    },
+    {
+        "Id": 1522,
+        "IdHex": "0x5F2",
+        "Name": "Dienste (FRMFA/FRMFA_ALC)",
+        "ModuleId": 114,
+        "ModuleName": "FRMFA/FRMFA_ALC"
+    },
+    {
+        "Id": 1523,
+        "IdHex": "0x5F3",
+        "Name": "Dienste (CID_C/CID_C_H)",
+        "ModuleId": 115,
+        "ModuleName": "CID_C/CID_C_H"
+    },
+    {
+        "Id": 1524,
+        "IdHex": "0x5F4",
+        "Name": "Dienste (CID_C_R)",
+        "ModuleId": 116,
+        "ModuleName": "CID_C_R"
+    },
+    {
+        "Id": 1525,
+        "IdHex": "0x5F5",
+        "Name": "Dienste (CID_C_R_2)",
+        "ModuleId": 117,
+        "ModuleName": "CID_C_R_2"
+    },
+    {
+        "Id": 1527,
+        "IdHex": "0x5F7",
+        "Name": "Dienste (RFK)",
+        "ModuleId": 119,
+        "ModuleName": "RFK"
+    },
+    {
+        "Id": 1528,
+        "IdHex": "0x5F8",
+        "Name": "Dienste (IHKA)",
+        "ModuleId": 120,
+        "ModuleName": "IHKA"
+    },
+    {
+        "Id": 1529,
+        "IdHex": "0x5F9",
+        "Name": "Dienste (FKA)",
+        "ModuleId": 121,
+        "ModuleName": "FKA"
+    },
+    {
+        "Id": 1533,
+        "IdHex": "0x5FD",
+        "Name": "Dienste (Diagnosetool_PT_CAN)",
+        "ModuleId": 125,
+        "ModuleName": "Diagnosetool_PT_CAN"
+    },
+    {
+        "Id": 1534,
+        "IdHex": "0x5FE",
+        "Name": "Dienste (Diagnosetool_K_CAN_System)",
+        "ModuleId": 126,
+        "ModuleName": "Diagnosetool_K_CAN_System"
+    },
+    {
+        "Id": 1545,
+        "IdHex": "0x609",
+        "Name": "Dienste (XE_HDLI_LH_ALC)",
+        "ModuleId": 137,
+        "ModuleName": "XE_HDLI_LH_ALC"
+    },
+    {
+        "Id": 1546,
+        "IdHex": "0x60A",
+        "Name": "Dienste (XE_HDLI_RH_ALC)",
+        "ModuleId": 138,
+        "ModuleName": "XE_HDLI_RH_ALC"
+    },
+    {
+        "Id": 1547,
+        "IdHex": "0x60B",
+        "Name": "Dienste (CNV)",
+        "ModuleId": 139,
+        "ModuleName": "CNV"
+    },
+    {
+        "Id": 1573,
+        "IdHex": "0x625",
+        "Name": "Dienste (EDCS_VL)",
+        "ModuleId": 165,
+        "ModuleName": "EDCS_VL"
+    },
+    {
+        "Id": 1574,
+        "IdHex": "0x626",
+        "Name": "Dienste (EDCS_VR)",
+        "ModuleId": 166,
+        "ModuleName": "EDCS_VR"
+    },
+    {
+        "Id": 1575,
+        "IdHex": "0x627",
+        "Name": "Dienste (EDCS_HL)",
+        "ModuleId": 167,
+        "ModuleName": "EDCS_HL"
+    },
+    {
+        "Id": 1576,
+        "IdHex": "0x628",
+        "Name": "Dienste (EDCS_HR)",
+        "ModuleId": 168,
+        "ModuleName": "EDCS_HR"
+    },
+    {
+        "Id": 1649,
+        "IdHex": "0x671",
+        "Name": "Dienste (Diagnosedose/D_CAN_Tester)",
+        "ModuleId": 241,
+        "ModuleName": "Diagnosedose/D_CAN_Tester"
+    },
+    {
+        "Id": 1984,
+        "IdHex": "0x7C0",
+        "Name": "CAS Programmierung Bandende 1 [3] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 1985,
+        "IdHex": "0x7C1",
+        "Name": "CAS Steuerung 1 [5] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 1986,
+        "IdHex": "0x7C2",
+        "Name": "CAS Applikationsnachricht 1 [3] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    },
+    {
+        "Id": 1987,
+        "IdHex": "0x7C3",
+        "Name": "CAS Steuerung 1 [5] (CAS)",
+        "ModuleId": 64,
+        "ModuleName": "CAS"
+    }
+]
